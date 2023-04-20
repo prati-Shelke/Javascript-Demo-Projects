@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+       <style>
+
+            body
+            {
+                margin: 0;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+                min-width: 400px;
+            }
+    
+            h2
+            {
+               
+                font-size: 60px;
+                text-align: center;
+                padding-top: 30px;
+            }
+    
+            h1
+            {
+              
+                font-size: 30px;
+                text-align: center;
+                color:green;
+            }
+
+            
+           
+            button
+            {
+                background:rgb(12, 112, 12);
+                color: white;
+                padding: 10px 20px;
+                border: 2px solid #5f9341;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size:18px;
+            
+            }
+
+            .modal-container
+            {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                
+               
+            }
+
+            .modal-content
+            {
+                background-color: #fefefe;
+                margin:77% auto;
+                padding: 10px;
+                border: 1px solid #888;
+                width:200%;
+                
+            } 
+
+            #myModal
+            {
+                margin-left:-500px;
+                
+            }
+            
+            /* Modal content */
+            .modal-body
+            {
+                background-color: #fefefe;
+                padding-bottom:10px;
+                width:100%;
+                margin: auto; 
+               
+            } 
+
+            .close 
+            {
+                color: #aaa;
+                float: left;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            ​
+            .close:hover
+            {
+            color: black;
+            cursor: pointer;
+            }
+
+            #card-body
+            {
+                justify-content: space-evenly;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="head">
+                <h2> Note Taker </h2>
+                <h1> Add A New Note</h1>
+            </div>
+        
+            <div class="mb-3">
+                <label style="font-weight:bold;font-size:20px;" for="exampleFormControlTextarea1" class="form-label" >Note :</label>
+                <textarea class="form-control" id="inputText" rows="3"></textarea>
+              </div>
+
+            <div class="text-center">
+                <button id="addNote" >Add Note</button><br>
+            </div>
+
+            <div class="card-container">
+                <div class="row d-flex m-3" id="card-body">
+
+                </div>
+
+            </div>
+        </div>
+        <script src="noteTaker.js"></script>
+    </body>
+</html>

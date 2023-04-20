@@ -1,0 +1,105 @@
+<html>
+<head>
+
+</head>
+<style>
+
+    body
+    {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    }
+
+    
+
+    h2
+    {
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 30px;
+        
+    }
+
+    input
+    {
+        width: 50%;
+        height : 50px;
+        font-size: 25px;
+        color:black;
+        margin-bottom:40px;
+        margin-top:30px;
+        background-color: rgb(131, 231, 248);
+    }
+
+    button
+    {
+        height:40px;
+        width: 100px;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+    ol
+    {
+        font-size: 28px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    li{
+        margin: 15px;
+    }
+
+    .head
+    {
+        border:2px groove black;
+        margin:40px 100px;
+        border-radius: 30px;
+        
+    }
+
+    #cancel
+    {
+        height:40px;
+        width: 50px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #done
+    {
+        height:40px;
+        width: 100px;
+        font-size: 18px;
+        font-weight: bold;
+        
+    }
+
+    
+</style>
+
+<body>
+
+    <div class="head">
+    <h2>To-Do List
+        <br><div class="input">
+            <input type="text" id="input-el" placeholder="Add an item!">
+            <button id="submit-btn"> Submit </button>
+            <button id="clear-btn"> Clear List</button>
+        </div>
+    </h2>
+    </div>
+    
+    <ol id="ol">
+    </ol>
+
+    
+    <script src="toDoApp.js"></script>
+</body>
+</html>

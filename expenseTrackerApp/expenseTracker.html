@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <style>
+
+        body
+        {
+            margin: 0;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            min-width: 400px;
+        }
+
+        h2
+        {
+           
+            font-size: 60px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h1
+        {
+          
+            font-size: 30px;
+            text-align: center;
+            color:green;
+        }
+
+        input
+        {
+            width :30%;
+            height:30px;
+            border:0;
+            border-top:1px solid rgb(216, 214, 212);
+            border-left:1px solid rgb(216, 214, 212); 
+            
+            
+        }
+       
+        .input1
+        {
+            margin-left: 300px;
+            padding-bottom: 30px;
+            width:150%; 
+            font-size: 18px;  
+            font-weight: bold;  
+        }
+
+       
+
+        .input2
+        {
+            margin-left: 300px;
+            padding-bottom : 30px;
+            font-size: 18px;  
+            font-weight: bold; 
+        }
+
+        button
+        {
+            background: #5f9341;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid #5f9341;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size:18px;
+            margin-left:40%;
+        }
+
+        #cancel
+        {
+            background:rgb(240, 66, 66);
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size:10px;
+            margin-left:30%;
+        }
+
+        #table
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 40px;
+            margin-left:300px;
+        }
+
+        
+        #table td, #table th 
+        {
+            border: 1px solid #ddd;
+            padding: 4px;
+        }
+
+        #table th 
+        {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-align: left;
+        }
+
+
+        
+        </style>
+
+    </head>
+
+    <body>
+        <div id="head">
+           <h2> Expense Tacker </h2>
+           <h1> Add a new item</h1>
+        </div>
+
+        <div class="input1">
+        Name :
+        <input type="text" placeholder="Where was the expense made?"
+        id="inputText"><br>
+        </div>
+
+        <div class="input2">
+        Date : 
+        <input type="date"  id="inputDate"> 
+        Amount :
+        <input type="text" id="inputAmount">
+         </div>
+
+         <button id="add">Add Expense</button><br>
+
+         <div>
+         <table id="table">
+             <tr><th>Name</th>
+                 <th>Date</th>
+                 <th>Amount</th>
+            </tr>
+            <tbody id="body">
+    
+
+            </tbody>
+         </table>
+        </div>
+        
+    
+    <script src="expenseTracker.js"></script>
+</body>
+</html>
